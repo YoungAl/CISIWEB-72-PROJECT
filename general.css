@@ -1,0 +1,228 @@
+* {box-sizing: border-box; }
+header, nav, main, footer { display: block; }
+body { background-color: #F0F8FF;
+    background-image: url(resources/background.gif);
+    color: #1C2833;
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0;
+ }
+#wrapper { background-color: #1C2833;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 3px 3px 3px #666666;
+    min-height: 100vh;      
+ }
+header { background-color:#7FB3D5; 
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+h1 { 
+    font-size: 3em;
+    font-family: fantasy;
+ }
+nav {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  background-color: #1C2833;
+  width: 100%;
+}
+
+nav a {text-decoration: none; }
+nav a:link { color: #F0F8FF; }
+nav a:visited { color: #7FB3D5; }
+nav a:hover { color: #5499C7; }
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  padding: 10px;
+}
+
+footer { background-color: #7FB3D5;
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 10px;
+    border-top: 2px #1C2833 solid;
+}
+main {padding: 0 0 2em 0; 
+    margin-left: 200px;
+    background-color: #F0F8FF;
+    width: 80%
+}
+
+main h2, main h3, main h4, main p, main div, main ul, main dl { padding-left: 3em; padding-right: 2em; }
+
+h4 { background-color: #7FB3D5;
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000033;
+    clear: left;
+}
+
+.details { padding-left: 20%;
+    padding-right: 20%;
+    overflow: auto;
+}
+.floatleft { float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;    
+}
+
+.item {
+        background-color: #F8F9F9;
+        margin: 1em;
+        padding: 1em;
+        overflow: auto;
+        max-width: 40%;
+        display: inline-block;
+    }
+.item img {
+    float: right;
+}
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side,
+.right-side {
+  width: 48%; /* Adjust this value if you want more or less space between the columns */
+}
+
+.left-side {
+  background-color: #D3D3D3; /* Green background */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.right-side {
+  background-color: #D3D3D3; /* Red background */
+}
+
+.right-side table {
+    margin-bottom: 20px;
+}
+
+.middle-right-services {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.top-right img {
+  max-width: 100%;
+}
+
+.top-right-services {
+  background-color: #7FB3D5;
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.bottom-right-services {
+  padding: 1em;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.safety-slogan {
+    margin-top: 50px;
+}
+
+.button-container {
+  text-align: center; /* add this line */
+  margin-top: 60px;
+}
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #1C2833;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #5499C7;
+}
+.centered {
+    text-align: center;
+}
+img { padding-left: 10px;
+    padding-right: 10px;
+}
+#home {
+    height: 250px;
+    background-image: url(resources/homepage.png);
+    background-size: 100% 100%;
+    margin-bottom: 40px;
+}
+
+
+#mobile {display: none;}
+#desktop {display: inline;}
+
+table { width: 90%;
+        margin:auto;
+        border-spacing: 0;
+        background-color: #D3D3D3;
+}
+th, td { padding: 10px; }
+tr:nth-of-type(odd) { background-color: #7FB3D5; }
+
+form {padding: 2em;}
+label { float: left; display: block; text-align: right; width: 8em; padding-right: 1em;}
+input, textarea { display: block; margin-bottom: 1em; }
+#mySubmit { margin-left: 9.5em; }
+audio {display: block; margin-top: 1em;}
+
+@media only screen and (max-width: 1024px) {
+    body {margin: 0; background-image: none;}
+    #wrapper {width: auto; min-width: 0; margin: 0; padding: 0; box-shadow: none;}
+    header {border-bottom: 5px solid #F0F8FF;}
+    h1 {margin-top: 0; margin-bottom: 1em; padding-top: 1em; padding-bottom: 1em; font-size: 2.5em;}
+    nav {float: none; width: auto; padding-top: 0; margin: 10px; font-size: 1.3em;}
+    nav li {display: inline-block;}
+    nav a {padding: 1em; width: 8em; font-weight: bold; border-style: none;}
+    nav ul {padding: 0; margin: 0;}
+    main {padding: 0; margin: 0; font-size: 90%;}
+}
+
+@media only screen and (max-width: 768px){
+    header {background-image: url("resources/cleaninglogo-small.jpg");
+        height: 128px; }
+    h1 {font-size: 2em;
+        text-align: center;
+        padding-left: 0; }
+    nav { margin: 0; }
+    nav a { display: block;
+        padding: 0.2em;
+        width: auto;
+        border-bottom: 1px solid #F0F8FF; }
+    nav li { display: block; }
+    main { padding-top: 1px; }
+    h2 { padding: 0.5em 0 0 0.5em;
+        margin-right: 0.5em; }
+    .details { padding-left: 0; padding-right: 0; }
+    #homehero { background-image: none; height: auto; }
+    .floatleft { padding-left: 0.5em; padding-right: 0.5em; }
+    #mobile { display: inline; }
+    #desktop { display: none; }
+}
